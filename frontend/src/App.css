@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: 150px;
 }
 
 .App-logo {
@@ -35,4 +36,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.header{
+  position:  absolute;
+  height: 100px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(136, 35, 35, 0.473);
+}
+.footer{
+  position:  absolute;
+  height: 100px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(136, 35, 35, 0.473);
 }
