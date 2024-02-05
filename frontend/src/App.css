@@ -56,3 +56,9 @@
   bottom: 0;
   background-color: rgba(136, 35, 35, 0.473);
 }
+.hide{
+  display: none;
+}
+.active{
+  color: red;
+}

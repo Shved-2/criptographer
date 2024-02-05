@@ -2,7 +2,13 @@ function Main() {
   return (
     <div className="main">
       <h2>Main</h2>
-      <p>---</p>
+
+      <div>
+        <a href="/create">Создать Note</a>
+      </div>
+      <div>
+        <a href="/note">Прочитать Note</a>
+      </div>
     </div>
   );
 }

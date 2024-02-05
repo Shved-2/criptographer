@@ -38,7 +38,7 @@ function Note() {
       setErrorClass('hide');
     }
   }, []);
-  const getNote = (e) => {
+  function getNote(e) {
     e.preventDefault();
     let url = e.target.elements.url.value;
 
@@ -49,7 +49,10 @@ function Note() {
     }
     noteURL = url;
     window.location.href = env.url + '/' + url;
-  };
+  }
+  function serchNote() {
+    window.location.href = env.url;
+  }
   return (
     <div>
       <h2>Note</h2>
@@ -62,6 +65,7 @@ function Note() {
       </div>
       <div className={lineClass}>
         <p>{noteText}</p>
+        <button onClick={serchNote}>Смотреть еще один Note</button>
       </div>
       <div className={errorClass}>
         <p>Произола ошибка. таой хэш не найден</p>

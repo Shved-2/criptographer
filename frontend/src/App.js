@@ -12,8 +12,8 @@ import Note from './components/Note';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
