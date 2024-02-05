@@ -43,17 +43,19 @@ function Create() {
   return (
     <div>
       <h2>Create</h2>
+
       <form onSubmit={loadDateFromForm} className={formClass}>
         <label htmlFor="note">Создать сообщение</label>
         <textarea name="" id="note" placeholder={'введите сообщение'}></textarea>
         <button type="submit">Send</button>
       </form>
+
       <div className={lineClass}>
         <div>{url}</div>
         <div>
           <button
             onClick={function () {
-              windiw.location.reload();
+              window.location.reload();
             }}>
             new Note
           </button>
